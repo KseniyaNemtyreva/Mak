@@ -27,6 +27,9 @@ module.exports = {
         ...defaultTheme.height,
         fit: 'fit-content',
       },
+      gridTemplateRows: {
+        '7': 'repeat(7, minmax(0, 1fr))',
+      }
     },
     // container: {
     //   center: true,
@@ -117,7 +120,7 @@ module.exports = {
           },
           '@screen xl': {
             maxWidth: '1440px',
-            padding: '0 34px',
+            padding: '0 80px',
           },
         },
       });

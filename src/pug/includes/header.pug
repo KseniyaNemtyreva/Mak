@@ -1,40 +1,25 @@
-header 
+header(id='up') 
     .container 
-        .header-section 
-            a(href="#").header-logo
-                img(src="../assets/img/logo.svg", alt="logo")
-    //- .container 
-    //-     .header__hole
-    //-         a.header__logo(href="#")
-    //-             img(src="../assets/img/logo.svg", alt="logo") 
-    //-         .menu-mobile.menu_ul 
-    //-             .header__record
-    //-                 a.header__record__button(href="#").btn.hover__but
-    //-                     |Запись
-    //-                 .eader__record__time
-    //-                     p 
-    //-                     |Пн-Сб с 10:00 до 20:00
-    //-                     p 
-    //-                     |Вс с 10:00 до 19:00
-    //-             mav.header__nav
-    //-                 ul
-    //-                     li 
-    //-                     a(href="#") 
-    //-                         |Услуги
-    //-                     li 
-    //-                     a(href="#") 
-    //-                         |Цены
-    //-                     li 
-    //-                     a(href="#") 
-    //-                         |О нас
-    //-                     li 
-    //-                     a(href="#") 
-    //-                         |Контакты
-    //-             .header__social-networks
-    //-                 a(href="#")
-    //-                     img(src="../assets/img/vk.svg", alt="vk")
-    //-                 a(href="#")
-    //-                     img(src="../assets/img/inst.svg", alt="inst")
-    //-         a(href="#").menu-link
-    //-                 span
-          
+        .header-wrapper 
+            .header-section
+                a(href="/ ").header-logo
+                    img(src="../assets/img/logo.svg", alt="logo")
+            .header-section
+                .header-section__item
+                    button(type="submit").header-section__entry Запись                       
+                .header-section__item.item-schedule
+                    p Пн-Сб с 10:00 до 20:00
+                    p Вс с 10:00 до 19:00
+            .header-section.menu-section 
+                a.header-section__link(href="#") Услуги
+                a.header-section__link(href="/prices.html") Цены
+                a.header-section__link(href="/about.html") О нас
+                a.header-section__link(href="/contacts.html") Контакты
+            .header-section.social-networks 
+                a.header-section-item.social-networks__vk(href="#") 
+                    img(src="../assets/img/vk.svg")
+                a.header-section-item.social-networks__in(href="#") 
+                    img(src="../assets/img/inst.svg")
+            button.header-section__burger-menu(type="button" id="burger-menu") 
+                img(src="../assets/img/burger.svg")
+    
