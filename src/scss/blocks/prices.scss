@@ -1,0 +1,68 @@
+.prices-wrapper{
+    @apply my-[100px]
+}
+.prices-header{
+    @apply mb-[100px]
+}
+
+.prices-content__1lv-list ul{
+    @apply pl-0 sm:pl-[25px] pb-[15px];
+    transition: all 0.5s ease-in-out; 
+}
+
+.prices-content__2lv-list{
+    @apply pr-[15px]
+}
+
+.prices-content__2lv-list li{
+    border-top: 1px solid rgba(143, 116, 112, 0.3);
+}
+
+.prices-content__1lv-title {
+    @apply text-18px sm:text-20px md:text-24px pb-[30px] cursor-pointer; 
+}
+
+.prices-content__item-title{
+    @apply flex justify-between font-medium leading-[120%]  items-center
+}
+
+.prices-content__2lv-list .prices-content__item-title{
+    @apply text-12px sm:text-14px md:text-18px lg:text-20px py-[4px] pl-[20px] hover:bg-bej2
+}
+.prices-content__2lv-title{
+    @apply font-normal
+}
+.prices-content__2lv-right {
+    @apply flex items-center
+}
+.prices-content__entry{
+    @apply bg-red text-bej rounded-tl-[20px] invisible rounded-br-[20px] px-[15px] sm:px-[25px] md:px-[38px] py-[10px] mx-[10px] lg:mr-[30px];
+}
+span.prices-content__plus{
+    @apply px-[10px]
+}
+
+.prices-content__2lv-list li:hover .prices-content__entry{
+    @apply visible
+}
+.prices-content__2lv-price{
+    @apply whitespace-nowrap
+}
+
+.prices-content__1lv-list ul.close{
+    visibility:hidden;
+    opacity:0;
+    max-height: 0;
+    padding-bottom: 0;
+}
+
+.prices-content__1lv-list ul.open{
+    visibility:visible;
+    opacity:1;
+    max-height: 100000px;
+}
+.prices-content a:hover{
+    text-decoration: 1px underline var(--black);
+}
+
+

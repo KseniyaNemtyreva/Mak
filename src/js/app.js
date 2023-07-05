@@ -4,6 +4,7 @@ import { swiper } from './swiper';
 import { burgerMenu } from './burgerMenu';
 import { initHeader } from './initHeader';
 import { fancybox } from './fancybox';
+import { initScript } from './initScript';
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -15,4 +16,5 @@ const init = () => {
     burgerMenu();
     initHeader();
     fancybox();
+    initScript();
 };

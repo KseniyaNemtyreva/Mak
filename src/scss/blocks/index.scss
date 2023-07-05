@@ -61,34 +61,38 @@
     @apply bg-darkbej;
 }
 
-//services
-.services-wrapper {
+//main-services
+.main-services-wrapper {
     @apply grid grid-cols-1 2lg:grid-cols-2 items-center gap-[80px] md:gap-[110px] mt-[80px] md:mt-[150px]
 }
-.services-left__list {
+.main-services-left__list {
     @apply grid grid-cols-1 md:grid-cols-2 md:grid-rows-7 gap-[40px] md:gap-[55px]
 }
-.services-left__item{
-    @apply bg-bej2 p-10 flex flex-col hover:bg-black hover:text-bej;
+.main-services-left__item{
+    @apply bg-bej2 p-10 flex flex-col hover:bg-darkbej hover:text-bej;
     transition: 0.5s;
 }
-.services-left__item-img{
+.main-services-left__item:hover img{
+   filter: brightness(0) invert(1);
+}
+
+.main-services-left__item-img{
     @apply self-center
 }
 
-.services-left__item-title{
+.main-services-left__item-title{
     @apply text-[36px] leading-[120%] py-[30px]
 }
-.services-left__item-desc{
+.main-services-left__item-desc{
     @apply text-18px leading-[160%];
 }
-.services-right__content-title{
+.main-services-right__content-title{
     @apply mb-10
 }
 .title{
     @apply text-[40px] md:text-[60px] leading-[120%]
 }
-.services-right__content-desc{
+.main-services-right__content-desc{
     @apply text-16px  md:text-18px leading-[160%] mb-[30px] sm:mb-[40px] md:mb-[80px];
 }
 
@@ -216,6 +220,9 @@
 }
 .present__footer{
     @apply text-center mt-[85px]
+}
+.present__footer__btn{
+    @apply bg-red
 }
 
 
