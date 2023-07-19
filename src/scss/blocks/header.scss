@@ -1,5 +1,6 @@
 header{
-    @apply static w-full top-0 z-[2];
+    @apply sm:absolute w-full top-0 z-[2];
+    background: linear-gradient(var(--bej), transparent);
 }
 .header-wrapper{
     @apply flex justify-between items-center py-5;

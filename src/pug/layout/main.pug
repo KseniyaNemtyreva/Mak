@@ -10,6 +10,7 @@ html(lang='ru')
     meta(name="description", content=description)
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     meta(name="viewport" content="width=device-width, initial-scale=1.0,user-scalable=no")
+    script(src="https://unpkg.com/imask")
     block head
 
   body(class="debug-screens")
@@ -19,6 +20,9 @@ html(lang='ru')
         .wrapper-content
           block content
         include ../includes/footer
+    .img-flowers
+      img.img-flower.top-0(src="../assets/img/flowers/1.png")
+      img.img-flower.bottom-0.right-0(src="../assets/img/flowers/4.png")
     .modal-menu__wrapper.close(id='header__info-burger') 
       .modal-menu__block(id='burger__menu-list') 
         button.modal-menu__close(type="button" id='burger__menu-close') 

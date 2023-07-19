@@ -8,7 +8,7 @@ block variables
 
 
 block content
-    .master
+    .master.wrapper-section
         img(src="../assets/img/background/bg-master.png").master-background.img-background
         .container
             .master-wrapper
@@ -83,5 +83,31 @@ block content
                                 img(src="../assets/img/works-master/work-master.png")
                             .master-content__works-item(data-fancybox="w-gallery" href="../assets/img/works-master/work-master.png")
                                 img(src="../assets/img/works-master/work-master.png")
+
+            .products-catalog__modal-wrapper(id="master-empty")
+                .products-catalog__modal-title Записаться в салон «Мак»
+                .products-catalog__modal-group
+                    label.products-catalog__modal-label(for="masters") Выберите мастера
+                    select.products-catalog__modal-selected(name="select" id="masters") 
+                        option(value="value1") Генералова Галина
+                        option(value="value2") Белова Ирина
+                        option(value="value3") Иванченко Марина
+                .products-catalog__modal-group.phone
+                    label.products-catalog__modal-label(for="user-phone") Ваш контактный номер
+                    input.products-catalog__modal-number(type="text" id="user-phone" placeholder="+7 (___) ___ - __ - __")
+                .products-catalog__modal-group.datetime
+                    label.products-catalog__modal-label(id="user-datetime") Удобные дата и время самовывоза
+                    .products-catalog__modal-datetime
+                        input(type="date" id="user-datetime").products-catalog__modal-date
+                        input(type="time" id="user-datetime")               
+                .products-catalog__modal-group.checkbox
+                    label.products-catalog__modal-checkbox 
+                        p Согласие с 
+                            a(href="#")  политикой конфиденциальности
+                            |  и 
+                            a(href="#")  обработкой персональных данных
+                        input(type="checkbox" checked="checked")
+                        span.checkmark
+                .products-catalog__modal-empty Записаться
 
             

@@ -33,10 +33,13 @@
 @import 'blocks/contacts';
 @import 'blocks/prices';
 @import 'blocks/about';
+@import 'blocks/masters';
 @import 'blocks/master';
 @import 'blocks/services-section';
 @import 'blocks/services';
 @import 'blocks/service';
+@import 'blocks/products';
+@import 'blocks/products-catalog';
 
 /* Pages styles */
 @import 'demo';
@@ -60,6 +63,15 @@ body{
 }
 p{
     @apply font-['Rubik']
+}
+.wrapper-section{
+    @apply pt-[150px] pb-[90px]
+}
+.img-flowers{
+    @apply absolute z-[-1]
+}
+.img-flower{
+    @apply hidden 2lg:block fixed
 }
 .modal-menu__wrapper {
     @apply block fixed pt-[100px] left-0 top-0 w-full h-full overflow-auto px-[36px]; 

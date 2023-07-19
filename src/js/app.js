@@ -2,9 +2,13 @@ import '../scss/app.scss';
 
 import { swiper } from './swiper';
 import { burgerMenu } from './burgerMenu';
-import { initHeader } from './initHeader';
 import { fancybox } from './fancybox';
 import { initScript } from './initScript';
+import { initIMask } from './initIMask';
+import { initVideo } from './initVideo';
+
+
+
 
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -14,7 +18,8 @@ document.addEventListener('DOMContentLoaded', () => {
 const init = () => {
     swiper();
     burgerMenu();
-    initHeader();
     fancybox();
     initScript();
+    initIMask();
+    initVideo();
 };

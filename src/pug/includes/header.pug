@@ -22,4 +22,25 @@ header(id='up')
                     img(src="../assets/img/inst.svg")
             button.header-section__burger-menu(type="button" id="burger-menu") 
                 img(src="../assets/img/burger.svg")
+        
+        .products-catalog__modal-wrapper(id="main-empty")
+            .products-catalog__modal-title Записаться в салон «Мак»
+            .products-catalog__modal-group.phone
+                label.products-catalog__modal-label(for="user-phone") Ваш контактный номер
+                input.products-catalog__modal-number(type="text" id="user-phone" placeholder="+7 (___) ___ - __ - __")
+            .products-catalog__modal-group.datetime
+                label.products-catalog__modal-label(id="user-datetime") Удобные дата и время самовывоза
+                .products-catalog__modal-datetime
+                    input(type="date" id="user-datetime").products-catalog__modal-date
+                    input(type="time" id="user-datetime")
+            span.products-catalog__modal-text К этому времени заказ будет ожидать Вас в салоне «Мак» по адресу: г. Орехово-Зуево, ул. 1905 года, д. 1А
+            .products-catalog__modal-group.checkbox
+                label.products-catalog__modal-checkbox 
+                    p Согласие с 
+                        a(href="#")  политикой конфиденциальности
+                        |  и 
+                        a(href="#")  обработкой персональных данных
+                    input(type="checkbox" checked="checked")
+                    span.checkmark
+            .products-catalog__modal-empty Записаться
     
