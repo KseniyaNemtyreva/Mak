@@ -36,6 +36,7 @@ export function swiper(){
         modules: [ FreeMode],
         spaceBetween: 30,
         freeMode: true,
+        grabCursor: true,
         breakpoints: {
             0: {
               slidesPerView: 2,
@@ -90,6 +91,7 @@ export function swiper(){
       modules: [ FreeMode],
       spaceBetween: 30,
       freeMode: true,
+      grabCursor: true,
       breakpoints: {
           0: {
             slidesPerView: 2,
