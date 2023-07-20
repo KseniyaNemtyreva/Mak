@@ -1,4 +1,4 @@
-export function initScript(){
+export function initLists(){
                   
         document.querySelectorAll('.prices-content__1lv-list li').forEach(el =>{
             el.addEventListener('click', ()=>{

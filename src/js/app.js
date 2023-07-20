@@ -3,7 +3,7 @@ import '../scss/app.scss';
 import { swiper } from './swiper';
 import { burgerMenu } from './burgerMenu';
 import { fancybox } from './fancybox';
-import { initList } from './initList';
+import { initLists } from './initLists';
 import { initIMask } from './initIMask';
 import { initVideo } from './initVideo';
 
@@ -19,7 +19,7 @@ const init = () => {
     swiper();
     burgerMenu();
     fancybox();
-    initList();
+    initLists();
     initIMask();
     initVideo();
 };

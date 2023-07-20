@@ -2,11 +2,6 @@
     @apply mb-[100px]
 }
 
-.prices-content__1lv-list ul{
-    @apply pl-0 sm:pl-[25px] pb-[15px];
-    transition: all 0.5s ease-in-out; 
-}
-
 .prices-content__2lv-list{
     @apply pr-[15px]
 }
@@ -20,11 +15,10 @@
 }
 
 .prices-content__item-title{
-    @apply flex justify-between font-medium leading-[120%]  items-center
+    @apply flex justify-between font-medium leading-[120%] items-center
 }
-
 .prices-content__2lv-list .prices-content__item-title{
-    @apply text-12px sm:text-14px md:text-18px lg:text-20px py-[4px] pl-[20px] hover:bg-bej2
+    @apply text-12px sm:text-14px md:text-18px lg:text-20px py-[4px] pl-[20px]
 }
 .prices-content__2lv-title{
     @apply font-normal
@@ -38,9 +32,14 @@
 span.prices-content__plus{
     @apply px-[10px]
 }
-
+.prices-content__2lv-list li{
+    transition: all 0.5s ease-in-out;
+}
 .prices-content__2lv-list li:hover .prices-content__entry{
     @apply visible
+}
+.prices-content__2lv-list li:hover{
+    @apply bg-bej2
 }
 .prices-content__2lv-price{
     @apply whitespace-nowrap
@@ -51,12 +50,19 @@ span.prices-content__plus{
     opacity:0;
     max-height: 0;
     padding-bottom: 0;
+    transition: visibility 0.7s linear,opacity 0.7s linear, max-height 0.7s ease-in-out;
+}
+
+.prices-content__1lv-list ul{
+    @apply pl-0 sm:pl-[25px] pb-[15px] max-h-0;
+   
 }
 
 .prices-content__1lv-list ul.open{
-    visibility:visible;
+    visibility: visible;
     opacity:1;
-    max-height: 100000px;
+    max-height: 1000px;
+    transition: visibility 0.5s linear,opacity 0.5s linear, max-height 0.5s ease-in-out;
 }
 .prices-content a:hover{
     text-decoration: 1px underline var(--black);
